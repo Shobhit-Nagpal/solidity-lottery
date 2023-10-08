@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
   "contractName": "VRFConsumerBaseV2",
-  "sourceName": "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol",
+  "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
   "abi": [
     {
       "inputs": [

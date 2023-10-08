@@ -1,10 +1,9 @@
-require("@nomicfoundation/hardhat-chai-matchers");
-require("@nomiclabs/hardhat-etherscan");
-require("hardhat-deploy");
-require("solidity-coverage");
-require("hardhat-gas-reporter");
-require("hardhat-contract-sizer");
-require("dotenv").config();
+require("hardhat-contract-sizer")
+require("@nomicfoundation/hardhat-toolbox")
+require("dotenv").config()
+require("hardhat-deploy")
+require("@nomicfoundation/hardhat-ethers")
+require("hardhat-deploy-ethers")
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
@@ -42,6 +41,7 @@ module.exports = {
         }
     },
     mocha:{ 
-        timeout: 500000 //200sec
+        timeout: 200000,
+        exit: true,
     }
 };
